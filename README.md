@@ -23,10 +23,6 @@ This project follows the full data analytics workflow, from business understandi
 
 
 
-!\[Steam Dashboard](screenshots/dashboard.png)
-
-
-
 \*\*Interactive Dashboard (Tableau Public):\*\*  
 
 https://public.tableau.com/app/profile/catalina.herrera1503/viz/SteamMarketTrendsPlayerSatisfaction19972025/Dashboard-SteamGamesAnalysis
