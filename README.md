@@ -18,7 +18,8 @@ This project follows the full data analytics workflow, from business understandi
 
 
 
-> \*(Insert dashboard screenshot here)\*
+<img width="885" height="715" alt="image" src="https://github.com/user-attachments/assets/1466ad90-8178-4314-a898-fa37ab70ac7a" />
+
 
 
 
