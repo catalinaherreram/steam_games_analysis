@@ -1,6 +1,8 @@
-\# Steam Games Market Analysis
+# Steam Games Market Analysis
 
+A complete end-to-end Data Analytics portfolio project analyzing the Steam Games dataset using **SQL (DuckDB)** and **Tableau Public**.
 
+This project follows the complete data analytics workflow, from business understanding and data preparation to SQL analysis, dashboard development, and strategic recommendations.
 
 A complete end-to-end Data Analytics portfolio project analyzing the Steam Games dataset using SQL (DuckDB) and Tableau Public.
 
@@ -25,311 +27,157 @@ This project follows the full data analytics workflow, from business understandi
 
 \*\*Interactive Dashboard (Tableau Public):\*\*  
 
+![Dashboard Preview](screenshots/dashboard.png)
+>>>>>>> 2a9459d (Improve README formatting)
+
+🔗 **Interactive Dashboard (Tableau Public):**  
 https://public.tableau.com/app/profile/catalina.herrera1503/viz/SteamMarketTrendsPlayerSatisfaction19972025/Dashboard-SteamGamesAnalysis
 
+---
 
+# Project Overview
 
-\---
-
-
-
-\# 📌 Project Overview
-
-
-
-Steam hosts thousands of games covering a wide variety of genres, pricing strategies and publishers.
-
-
+Steam hosts thousands of games covering a wide variety of genres, pricing strategies, and publishers.
 
 The objective of this project is to identify which game characteristics are most strongly associated with player satisfaction and market trends using SQL analysis and interactive data visualization.
 
+> **Note:** This is a fictional business scenario created for educational and portfolio purposes.
 
+---
 
-This is a fictional business scenario created for educational and portfolio purposes.
-
-
-
-\---
-
-
-
-\# Business Questions
-
-
+# Business Questions
 
 The analysis focuses on answering the following questions:
 
+- How has the number of Steam game releases evolved over time?
+- Which game genres receive the highest player ratings?
+- Is there a relationship between game price and player satisfaction?
+- Which publishers consistently release highly rated games?
 
+---
 
-1\. How has the number of Steam game releases evolved over time?
+# Tools & Technologies
 
-2\. Which game genres receive the highest player ratings?
+| Tool | Purpose |
+|------|---------|
+| SQL | Data cleaning & analysis |
+| DuckDB | SQL database engine |
+| DBeaver | Database management |
+| Tableau Public | Dashboard & visualization |
+| Git | Version control |
+| GitHub | Project portfolio |
 
-3\. Is there a relationship between game price and player satisfaction?
+---
 
-4\. Which publishers consistently release highly rated games?
+# 📂 Repository Structure
 
-
-
-\---
-
-
-
-\# Tools \& Technologies
-
-
-
-\- SQL
-
-\- DuckDB
-
-\- DBeaver
-
-\- Tableau Public
-
-\- Git
-
-\- GitHub
-
-
-
-\---
-
-
-
-\# 📂 Repository Structure
-
-
-
-```
-
-Steam\_Games\_Analysis/
-
+```text
+Steam_Games_Analysis/
 │
-
-├── data\_raw/
-
-│   └── Original Steam dataset
-
+├── data_raw/
+│   └── games.csv
 │
-
-├── data\_clean/
-
-│   ├── steam\_games\_clean.csv
-
-│   ├── steam\_genres.csv
-
-│   └── top\_publishers.csv
-
+├── data_clean/
+│   ├── steam_games_clean.csv
+│   ├── steam_genres.csv
+│   └── top_publishers.csv
 │
-
-├── sql/
-
-│   └── steam\_games\_analysis.sql
-
-│
-
-├── tableau/
-
-│   └── Tableau workbook
-
-│
-
 ├── documentation/
-
-│   └── Steam\_Games\_Analysis\_Report.pdf
-
+│   └── Steam_Games_Market_Analysis.pdf
 │
-
 ├── screenshots/
-
 │   └── dashboard.png
-
 │
-
+├── sql/
+│   └── steam_games_analysis.sql
+│
+├── tableau/
+│   └── Steam Market Trends & Player Satisfaction (1997–2025).twbx
+│
 └── README.md
-
 ```
 
+---
 
+# Data Preparation
 
-\---
-
-
-
-\# Data Preparation
-
-
-
-The dataset was cleaned and transformed using SQL.
-
-
+The dataset was cleaned and transformed using SQL before the analysis.
 
 Main preparation steps included:
 
+- Import validation
+- Column selection based on business objectives
+- Data type corrections
+- Date transformation
+- Creation of analytical variables
+- Validation of numeric fields
+- Removal of incomplete records
+- Publisher normalization for publisher-level analysis
 
+---
 
-\- Import validation
+# 📈 Key Insights
 
-\- Column selection
+- **68.6%** of all games in the dataset were released between **2021 and 2025**, highlighting Steam's rapid recent growth.
+- **Casual** games achieved the highest average player rating (**81.02%**), closely followed by Adventure and Indie titles.
+- Games priced between **$5.00 and $9.99** received the highest average positive review ratio (**82.20%**).
+- Premium-priced games (**$60+**) showed comparatively lower average player ratings.
+- After normalizing publishers and filtering for at least **10 games** with **100+ reviews**, **27 publishers** achieved an average positive review score above **90%**.
 
-\- Data type corrections
+---
 
-\- Date transformation
+# 📊 Dashboard
 
-\- Creation of analytical variables
+The interactive Tableau dashboard includes:
 
-\- Validation of numeric fields
+- KPI overview
+- Annual game releases
+- Average player rating by genre
+- Player satisfaction by price range
+- Top-rated publishers
 
-\- Removal of incomplete records
+📍 **View Dashboard:**  
+https://public.tableau.com/app/profile/catalina.herrera1503/viz/SteamMarketTrendsPlayerSatisfaction19972025/Dashboard-SteamGamesAnalysis
 
-\- Publisher normalization for publisher-level analysis
+---
 
+# 📄 Documentation
 
+A complete project report describing the business scenario, data preparation, SQL analysis, dashboard development, and strategic recommendations is available in:
 
-\---
+📄 `documentation/Steam_Games_Market_Analysis.pdf`
 
+---
 
+# 📚 Dataset
 
-\# Key Insights
+**Steam Games Dataset**
 
-
-
-\- \*\*68.6%\*\* of all games in the dataset were released between \*\*2021 and 2025\*\*, highlighting Steam's rapid recent growth.
-
-
-
-\- \*\*Casual\*\* games achieved the highest average player rating (\*\*81.02%\*\*), closely followed by Adventure and Indie titles.
-
-
-
-\- Games priced between \*\*$5.00 and $9.99\*\* received the highest average positive review ratio (\*\*82.20%\*\*).
-
-
-
-\- Premium-priced games (\*\*$60+\*\*) showed comparatively lower average player ratings.
-
-
-
-\- After normalizing publishers and filtering for at least \*\*10 games\*\* with \*\*100+ reviews\*\*, \*\*27 publishers\*\* achieved an average positive review score above \*\*90%\*\*.
-
-
-
-\---
-
-
-
-\# Dashboard
-
-
-
-The Tableau dashboard summarizes the main findings through:
-
-
-
-\- KPI overview
-
-\- Annual game releases
-
-\- Average player rating by genre
-
-\- Player satisfaction by price range
-
-\- Top-rated publishers
-
-
-
-\---
-
-
-
-\# Documentation
-
-
-
-A complete project report describing the business scenario, data preparation, SQL analysis, dashboard development and strategic recommendations is available in:
-
-
-
-```
-
-documentation/Steam\_Games\_Analysis\_Report.pdf
-
-```
-
-
-
-\---
-
-
-
-\# Dataset
-
-
-
-Steam Games Dataset
-
-
-
-Source:
-
+Source:  
 https://www.kaggle.com/datasets/fronkongames/steam-games-dataset
 
+The dataset was created using the Steam Web API and Steam Spy and is publicly available on Kaggle.
 
+---
 
-The dataset is publicly available and was created using the Steam Web API and Steam Spy.
+# Author
 
-
-
-\---
-
-
-
-\# 👤 Author
-
-
-
-\*\*Catalina Herrera\*\*
-
-
+**Catalina Herrera**
 
 Data Analytics Portfolio Project
 
+- GitHub: https://github.com/catalinaherreram
+- LinkedIn: https://www.linkedin.com/in/catalina-herreram/
 
+---
 
-GitHub:
+## Skills Demonstrated
 
-\*https://github.com/catalinaherreram/\*
-
-
-
-LinkedIn:
-
-\*https://www.linkedin.com/in/catalina-herreram/\*
-
-
-
-\---
-
-
-
-\## About this project
-
-
-
-This project was developed as part of my Data Analytics portfolio to demonstrate practical skills in:
-
-
-
-\- SQL
-
-\- Data Cleaning
-
-\- Exploratory Data Analysis
-
-\- Business Intelligence
-
-\- Tableau
-
-\- Data Storytelling
-
+- SQL
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Business Intelligence
+- Tableau
+- Data Visualization
+- Data Storytelling
+- Business Recommendations
